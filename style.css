@@ -14,12 +14,26 @@
     width: 25px;
 }
 
-.container-fluid .navbar-brand a {
-    color: grey;
+.container-fluid .navbar-brand input {
+    color: gray;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    width: 700px;
+    font-size: 22px;
+    line-height: 15px;
 }
 
 .d-flex .btn-primary {
     display: hidden;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+}
+
+.notification .bell {
+    height: 25px;
 }
 
 .notification-circle {
@@ -28,22 +42,19 @@
     background-color: #F7685B;
     border-radius: 50%;
     position: relative;
-    left: 14px;
-    top: 6px;
+    right: 10px;
+    bottom: 8px;
 }
 
 .d-flex .avatar{
     border-radius: 50%;
     padding: 2px;
+    margin: 10px;
     border: 3px solid pink;
 }
 
 .main {
     margin: 50px 20px;
-}
-
-.list-group li {
-    border: none;
 }
 
 .container-text h2 {
@@ -240,6 +251,14 @@
     border-radius: 50%;
     width: 6px;
     height: 6px;
+}
+
+.list-complete {
+    opacity: 0.5;
+}
+
+.complete {
+    margin-left: 30px;
 }
 
 hr {
