@@ -7,17 +7,87 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>projekt bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@100;200;400;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-light bg-white">
         <div class="container-fluid">
-          <a class="navbar-brand ">Search for any training you want</a>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <img src="avatar.png" alt="avatar">
+            <div class="navbar-brand">
+                <img src="Vector.png" alt="vector1" class="vector-1">
+                <a class="navbar-brand ">Search for any training you want</a>
+            </div>
+            
+            <form class="d-flex">
+                <button type="button" class="btn btn-primary position-relative">
+                    <img src="Vector2.png" alt="">
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
+                    </span>
+                  </button>
+                <img src="avatar.png" alt="avatar" class="avatar">
           </form>
         </div>
       </nav>
+
+      <div class="main">
+        <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+                <h2>You've got <span>7 task </span>today.</h1>
+            </li>
+            <li class="list-group-item ">
+                <button type="button" class="btn btn-primary btn-lg" >+  Add new</button>
+            </li>
+          </ul>
+
+
+
+          <ul class="list-group">
+            <li class="list-group-item">
+                <div class="circle"></div>
+                <p class="text">Evaluate the addition and deletion of user IDs.</p>
+                <div class="alert alert-warning" role="alert">
+                    Panding
+                </div>
+                <div class="action">
+                    <div class="action-circle-minor"></div>
+                    <p>Minor</p>
+                </div>
+                <div class="people">
+                    <div class="first-person"></div>
+                    <div class="second-person"></div>
+                    <div class="third-person"></div>
+                    <div class="four-person"></div>
+                    <div class="fifth-person">+8</div>
+                </div>
+                <div class="more">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </li>
+            <li class="list-group-item">
+
+            </li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+
+        
 
 
 

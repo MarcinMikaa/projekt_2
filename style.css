@@ -3,8 +3,146 @@
     margin: 0;
 }
 
-.d-flex img{
+.container-fluid .navbar-brand img {
+    color: #5B63A9;
+    margin: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.container-fluid .navbar-brand a {
+    color: grey;
+}
+
+.d-flex .btn-primary {
+    display: hidden;
+}
+
+.d-flex .avatar{
     border-radius: 50%;
     padding: 2px;
     border: 3px solid pink;
+}
+
+.main {
+    margin: 50px 20px;
+}
+
+.list-group li {
+    border: none;
+}
+
+.list-group-item h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+
+}
+
+.list-group-item span {
+    color: violet;
+}
+
+.list-group-item button {
+    background-color: #884CB2;
+    border: #884CB2;
+    border-radius: 10px;
+}
+
+.list-group-item button:hover {
+    background-color: #884CB2;
+    border: #884CB2;
+}
+
+.list-group .list-group-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-group li {
+    align-items: center;
+}
+
+.list-group .list-group-item .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+.list-group-item .action p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #5C626D;
+}
+.list-group-item .people {
+    padding: 0;
+    display: flex;
+}
+
+.list-group-item .people div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+
+}
+
+.list-group-item .people .first-person {
+    background-color: #FBAC65;
+}
+
+.list-group-item .people .second-person {
+    background-color: #81CAF2;
+}
+
+.list-group-item .people .third-person {
+    background-color: #FFE595;
+}
+
+.list-group-item .people .four-person {
+    background-color: #5787A4;
+}
+
+.list-group-item .people .fifth-person {
+    background-color: #6FCF97;
+    color: white;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+}
+
+.list-group-item .more {
+    background: #F2F2F2;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+}
+
+.list-group-item .more div {
+    background-color: grey;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.text {
+    flex: 2;
+}
+
+.alert {
+    flex: 1;
+}
+
+.action {
+    flex: 1;
+}
+
+.people {
+    flex: 1;
 }
