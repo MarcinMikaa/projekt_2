@@ -22,6 +22,16 @@
     display: hidden;
 }
 
+.notification-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #F7685B;
+    border-radius: 50%;
+    position: relative;
+    left: 14px;
+    top: 6px;
+}
+
 .d-flex .avatar{
     border-radius: 50%;
     padding: 2px;
@@ -36,23 +46,24 @@
     border: none;
 }
 
-.list-group-item h2 {
+.container-text h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 36px;
 }
 
-.list-group-item span {
+.container-text span {
     color: violet;
 }
 
-.list-group-item button {
+.container-text button {
     background-color: #884CB2;
     border: #884CB2;
     border-radius: 10px;
+    display: flex;
 }
 
-.list-group-item button:hover {
+.container-text button:hover {
     background-color: #884CB2;
     border: #884CB2;
 }
@@ -82,29 +93,41 @@
     color:#F2994A;  
     padding: 5px;
 }
+
 .in-progress span{
     background-color: rgba(86, 204, 242, 0.2);
     border-radius: 20px;
     color: #56CCF2;
     padding: 5px;
 }
+
 .inactive span{
     background-color: rgba(235, 87, 87, 0.2);
     border-radius: 20px;
     color: #EB5757;
     padding: 4px;
 }
+
 .completed span {
     background-color: #27AE6033;
     border-radius: 20px;
     color: #27AE60;
     padding: 5px;
 }
+
 .cancelled span {
     background-color: #ffafaf;
     border-radius: 20px;
     color: #EB5757;
     padding: 5px;
+}
+
+.rows .text3 p{
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
 }
 
 .people {
@@ -121,6 +144,7 @@
     line-height: 15px;
     text-align: left;
 }
+
 .circle-minor {
     border-radius: 100%;
     border: 4px solid green;
@@ -128,6 +152,7 @@
     width: 6px;
     height: 6px;
 }
+
 .circle-normal {
     border-radius: 100%;
     border: 4px solid yellow;
@@ -135,7 +160,8 @@
     width: 6px;
     height: 6px;
 }
-.circle_critical {
+
+.circle-critical {
     border-radius: 100%;
     border: 4px solid red;
     margin-right: 3px;
@@ -146,28 +172,19 @@
 .text3 {
     flex: 2;
 }
+
 .pending, .in-progress, .completed, .cancelled {
     flex: 1;
 }
-.crc_tx {
+
+.circle-text {
     flex: 1;
 }
+
 .people {
     flex: 1;
 }
 
-.list-group-item .action {
-    padding: 25px;
-}
-
-.list-group-item .action p {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 15px;
-    color: #5C626D;
-}
 .people {
     padding: 0;
     display: flex;
@@ -187,10 +204,14 @@
 
 .people .second-person {
     background-color: #81CAF2;
+    position: relative;
+    left: -9px;
 }
 
 .people .third-person {
     background-color: #FFE595;
+    position: relative;
+    left: -18px;
 }
 
 .people .fifth-person {
@@ -199,6 +220,8 @@
     font-weight: 600;
     align-items: center;
     text-align: center;
+    position: relative;
+    left: -27px;
 }
 
 .more {
@@ -210,28 +233,13 @@
     justify-content: center;
     align-items: center;
 }
+
 .more div {
     background-color: rgb(170, 170, 170);
     margin: 1px;
     border-radius: 50%;
     width: 6px;
     height: 6px;
-}
-
-.text {
-    flex: 1;
-}
-
-.alert {
-    flex: 1;
-}
-
-.action {
-    flex: 1;
-}
-
-.people {
-    flex: 1;
 }
 
 hr {
