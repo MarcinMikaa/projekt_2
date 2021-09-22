@@ -83,10 +83,20 @@ body {
 .container-text button {
     background-color: #884CB2;
     border: #884CB2;
-    padding: 20px 40px;
+    padding: 12px 40px;
     border-radius: 10px;
     font-family: 'Poppins';
     font-size: 16px;
+}
+
+.container-text button span {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: normal;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 9px;
+    color: #FFFFFF;
 }
 
 .container-text button:hover {
@@ -365,8 +375,9 @@ hr {
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
- 
 }
+
+
 
 /* ---------------Mobile---------------- */
 
