@@ -297,19 +297,19 @@ hr {
     margin: 10px;
 }
 
-.box-first-post {
+.message {
     display: flex;
 }
 
-.box-first-post img {
+.box-post {
+    display: flex;
+}
+
+.avatar-border {
    height: 45px;
    height: 45px; 
    border: 3px solid rgb(36, 163, 209);
    border-radius: 50%;
-}
-
-.box-first-post .text-first-post {
-    margin: 7px 20px;  
 }
 
 .post-header {
@@ -342,10 +342,6 @@ hr {
     color: #555555;
 }
 
-.post-content span {
-    color: rgb(255, 0, 149);
-}
-
 .information-about {
     background-color: #DAE4F4;
     width: 100%;
@@ -357,14 +353,7 @@ hr {
     display: flex;
 }
 
-.box-first-post img {
-   height: 45px;
-   height: 45px; 
-   border: 3px solid rgb(36, 163, 209);
-   border-radius: 50%;
-}
-
-.box-first-post .text-first-post {
+.box-post .text-first-post {
     margin: 7px 20px;  
 }
 
@@ -409,8 +398,16 @@ hr {
     width: 100%;
 }
 
-.second-post span {
+.purple-effect span {
     color: rgb(125, 0, 214);
+}
+
+.pink-effect span {
+    color: rgb(255, 0, 149);
+}
+
+.golden-effect span {
+    color: rgb(255, 183, 0);
 }
 
 .file-zip {
@@ -466,42 +463,16 @@ hr {
 
 .zip-photo .file-size {
     font-family: 'Poppins';
-    font-style: normal;
-    font-weight: normal;
     font-size: 13px;
     line-height: 13px;
     color: #979797;
 }
 
-.zip-other {
-    display: flex;
-}
-
-.zip-other div {
-    display: flex;
-    text-align: center;
-}
-
-.third-post {
-    margin-top: 20px;
-}
-
-.third-post span {
-    color: rgb(255, 183, 0);
-}
-
-.text-first-post .post-add {
+.post-comment {
     background-color: #F3F3F3;
     border-radius: 10px;
     padding: 20px;
     width: 100%;
-}
-
-.text-first-post .post-add img {
-    border: none;
-    border-radius: 0;
-    width: 20px;
-    height: 20px;
 }
 
 /* ---------------Mobile---------------- */
