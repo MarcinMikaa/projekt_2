@@ -26,7 +26,8 @@ body {
     color: gray;
     font-family: 'Montserrat', sans-serif;
     border: none;
-    width: 700px;
+    width: auto;
+    width: 400px;
     font-size: 20px;
     line-height: 15px;
 }
@@ -67,7 +68,6 @@ body {
 
 .container-text .col-12, .col-lg-7 {
     display: flex;
-    align-items: center;
 }
 
 .container-text h2 {
@@ -111,7 +111,6 @@ body {
 .list .rows {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
     margin: 20px 0;
 }
 
@@ -133,6 +132,7 @@ body {
 
 .in-progress span{
     background-color: rgba(86, 204, 242, 0.2);
+    white-space: nowrap;
     border-radius: 20px;
     color: #56CCF2;
     padding: 1px 15px;
@@ -254,6 +254,7 @@ body {
 }
 
 .text-about {
+    min-width: 300px;
     flex: 2;
 }
 
@@ -349,7 +350,6 @@ hr {
     background-color: #DAE4F4;
     width: 100%;
     padding: 30px 20px;
-    margin-top: 20px;
     border-radius: 10px;
 }
 
@@ -378,7 +378,7 @@ hr {
 }
 
 .system-message {
-    margin: 50px 5px;
+    margin: 30px 5px;
 
 }
 
@@ -388,6 +388,7 @@ hr {
     font-weight: normal;
     font-size: 16px;
     line-height: 15px;
+    margin: 0;
     display: flex;
     align-items: center;
     color: #7D859A;
@@ -408,8 +409,14 @@ hr {
     width: 100%;
 }
 
+.second-post span {
+    color: rgb(125, 0, 214);
+}
+
 .file-zip {
     display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
 }
 .zip-photo img {
     height: 60px;
@@ -427,24 +434,29 @@ hr {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
     border-radius: 5px;
     margin-right: 20px;
-    padding: 25px;
+    padding: 10px;
+    padding-right: 20%;
 }
 
 .file-zip .zip-other {
     display: flex;
-    height: 120px;
-    width: 120px;
     background: #EBE9E9;
     border: 0.5px solid #E2E0E0;
     box-sizing: border-box;
     border-radius: 5px;
     padding: 25px;
+    text-align: center;
+    align-items: center;
+}
+
+.file-zip .zip-other span {
+    color: #555555;
+    font-family: 'Poppins';
+    font-size: 16px;
 }
 
 .zip-photo .file-name {
     font-family: 'Poppins';
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
     line-height: 13px;
     display: flex;
@@ -470,6 +482,27 @@ hr {
     text-align: center;
 }
 
+.third-post {
+    margin-top: 20px;
+}
+
+.third-post span {
+    color: rgb(255, 183, 0);
+}
+
+.text-first-post .post-add {
+    background-color: #F3F3F3;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+}
+
+.text-first-post .post-add img {
+    border: none;
+    border-radius: 0;
+    width: 20px;
+    height: 20px;
+}
 
 /* ---------------Mobile---------------- */
 
@@ -480,6 +513,14 @@ hr {
 }
 
 @media (max-width: 992px) {
+    
+    .main {
+        margin: 0;
+    }
+
+    .list {
+        margin: 20px 0;
+    }
 
     .task-complete, .on-hold {
         display: flex;
@@ -488,6 +529,18 @@ hr {
 
     .container-fluid .navbar-brand input {
         display: none;
+    }
+
+    .navbar {
+        margin: 0;
+    }
+
+    .rows {
+        overflow-x: auto;
+    }
+
+    .file-zip .zip-photo {
+        padding-right: 10px;
     }
 
 
